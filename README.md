@@ -1,6 +1,7 @@
 # Fetching data from API
 
 This is an example that demonstrates the way that we can fetch data from API without even using axios.
+also I used the api from https://www.randomuser.me/
 
 ## Screenshot
 
