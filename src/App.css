@@ -1,6 +1,9 @@
 * {
   font-family: "Sedgwick Ave", cursive;
 }
+body {
+  background-color: #b9beff;
+}
 
 .table-title {
   display: flex;
