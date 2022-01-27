@@ -1,0 +1,9 @@
+* {
+  font-family: "Sedgwick Ave", cursive;
+}
+
+.table-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
