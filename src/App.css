@@ -2,8 +2,33 @@
   font-family: "Sedgwick Ave", cursive;
 }
 
+.table-title {
+  display: flex;
+  text-align: center;
+  padding: 1rem;
+}
+
+.table-title div {
+  flex: 1;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(80, 80, 255);
+}
+
 .table-row {
+  display: flex;
+  border: 2px solid rgb(0, 3, 177);
+  border-radius: 2rem;
+  background-color: rgb(164, 164, 246);
+  margin: 1rem 0rem;
+  padding: 1rem;
+}
+
+.table-row div {
+  flex: 1;
+  margin: 0rem 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #fff;
 }

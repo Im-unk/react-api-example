@@ -22,14 +22,28 @@ export default class App extends Component {
     } else
       return (
         <div className="app">
-          {this.state.people.map((person, i) => (
-            <div key={`person-number-${i}`} className="table-row">
-              <img src={person.picture.large} />
-              <div>{person.name.first}</div>
-              <div>{person.name.last}</div>
-              <div>{person.email}</div>
-            </div>
-          ))}
+          <div className="table-title">
+            <div>Profile</div>
+            <div>Name</div>
+            <div>Last name</div>
+            <div>Country</div>
+            <div>City</div>
+            <div>Email</div>
+          </div>
+          <div className="table-row-wrapper">
+            {this.state.people.map((person, i) => (
+              <div key={`person-number-${i}`} className="table-row">
+                <div>
+                  <img src={person.picture.medium} />
+                </div>
+                <div>{person.name.first}</div>
+                <div>{person.name.last}</div>
+                <div>{person.location.country}</div>
+                <div>{person.location.city}</div>
+                <div>{person.email}</div>
+              </div>
+            ))}
+          </div>
         </div>
       );
   }
